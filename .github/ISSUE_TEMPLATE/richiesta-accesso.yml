@@ -1,0 +1,46 @@
+name: Richiesta di accesso / Access request
+description: Chiedi l'accesso al repository privato di T_MINIs / Request access to the private T_MINIs repository
+title: "Richiesta di accesso / Access request"
+assignees:
+  - davidepatch
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Questa richiesta è pubblica.** Non scrivere indirizzi email, numeri di telefono o altri dati personali oltre a quelli chiesti qui sotto.
+        **This request is public.** Do not include email addresses, phone numbers or any personal data beyond what is asked below.
+  - type: input
+    id: username
+    attributes:
+      label: Username GitHub / GitHub username
+      description: L'account che riceverà l'invito, di solito quello con cui stai scrivendo. / The account that will receive the invitation, usually the one you are using now.
+      placeholder: es. / e.g. mario-rossi
+    validations:
+      required: true
+  - type: input
+    id: nome
+    attributes:
+      label: Nome e cognome / Full name
+    validations:
+      required: true
+  - type: input
+    id: istituzione
+    attributes:
+      label: Istituzione e laboratorio / Institution and lab
+      placeholder: es. / e.g. Università di Torino, laboratorio di ...
+    validations:
+      required: true
+  - type: textarea
+    id: uso
+    attributes:
+      label: Uso previsto / Intended use
+      description: Per quale progetto o analisi vuoi usare T_MINIs? / What project or analysis would you use T_MINIs for?
+    validations:
+      required: true
+  - type: checkboxes
+    id: condizioni
+    attributes:
+      label: Condizioni d'uso / Terms of use
+      options:
+        - label: Userò T_MINIs solo per scopi accademici e non lo ridistribuirò. / I will use T_MINIs for academic purposes only and will not redistribute it.
+          required: true
