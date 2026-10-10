@@ -9,6 +9,9 @@ body:
       value: |
         **Questa richiesta è pubblica.** Non scrivere indirizzi email, numeri di telefono o altri dati personali oltre a quelli chiesti qui sotto.
         **This request is public.** Do not include email addresses, phone numbers or any personal data beyond what is asked below.
+
+        T_MINIs è distribuito con la licenza [PolyForm Strict 1.0.0](https://polyformproject.org/licenses/strict/1.0.0): è consentito usarlo solo per scopi non commerciali, e non è consentito ridistribuirlo, nemmeno in parte, né modificarlo senza il permesso dell'autore.
+        T_MINIs is distributed under the [PolyForm Strict License 1.0.0](https://polyformproject.org/licenses/strict/1.0.0): it may be used for noncommercial purposes only, and it may not be redistributed, in whole or in part, or modified without the author's permission.
   - type: input
     id: username
     attributes:
@@ -42,5 +45,5 @@ body:
     attributes:
       label: Condizioni d'uso / Terms of use
       options:
-        - label: Userò T_MINIs solo per scopi accademici e non lo ridistribuirò. / I will use T_MINIs for academic purposes only and will not redistribute it.
+        - label: "Ho letto la licenza PolyForm Strict 1.0.0 e userò T_MINIs solo per scopi non commerciali, senza ridistribuirlo né modificarlo senza il permesso dell'autore. / I have read the PolyForm Strict License 1.0.0 and will use T_MINIs for noncommercial purposes only, without redistributing or modifying it without the author's permission."
           required: true
